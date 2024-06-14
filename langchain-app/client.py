@@ -9,8 +9,8 @@ def get_llm_response(input_text):
             "config": {},
             "kwargs": {}
         }
-        # Send the POST request to the API endpoint
-        response = requests.post("http://localhost:8000/chatbot/invoke", json=payload)
+        # Use the Render URL
+        response = requests.post("https://langchain-app-1.onrender.com/chatbot/invoke", json=payload)
         response.raise_for_status()  # Raise an error for bad status codes
         
         # Parse the JSON response
