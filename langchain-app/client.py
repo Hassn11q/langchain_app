@@ -10,7 +10,7 @@ def get_llm_response(input_text):
             "kwargs": {}
         }
         # Use the Render URL
-        response = requests.post("https://langchain-app-1.onrender.com/chatbot/invoke", json=payload)
+        response = requests.post("https://langchain-app-8xsr.onrender.com/chatbot/invoke", json=payload)
         response.raise_for_status()  # Raise an error for bad status codes
         
         # Parse the JSON response
