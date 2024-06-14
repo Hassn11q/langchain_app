@@ -6,4 +6,6 @@ langchain_community
 langserve 
 fastapi 
 uvicorn 
-langchain_cohere 
+langchain_cohere
+pinecone-client
+langchain_community
