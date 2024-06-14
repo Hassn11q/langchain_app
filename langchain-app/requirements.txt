@@ -9,3 +9,5 @@ uvicorn
 langchain_cohere
 pinecone-client
 langchain_community
+sse_starlette
+
