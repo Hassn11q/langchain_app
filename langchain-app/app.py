@@ -1,5 +1,4 @@
 from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
 from langserve import add_routes
 import uvicorn
 from chain import chain
@@ -10,16 +9,6 @@ app = FastAPI(
     version="1.0",
     description="LangChain Server for FastAPI"
 )
-
-# CORS settings
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
 # add routes
 add_routes(app, chain, path="/chatbot")
 
